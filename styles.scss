@@ -1,0 +1,102 @@
+// 1️⃣ Bootstrap Variables Customization
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$primary: #ff5733;    // Custom Primary Color
+$secondary: #222222;
+$highlight: #FFD700;  // Gold accent color
+$background-color: #f8f9fa;
+$btn-border-radius: 12px;
+$card-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+// 2️⃣ Customizing Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+// 3️⃣ Additional Custom Styles
+body {
+    background-color: $background-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-custom {
+    background-color: $secondary;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background: url('images/hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+    border-bottom: 4px solid $highlight;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.btn-primary-custom {
+    background-color: $highlight;
+    border-radius: $btn-border-radius;
+    padding: 14px 30px;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: darken($highlight, 10%);
+    }
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: $card-shadow;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    height: 100%;
+    &:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.feature-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.testimonial {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.testimonial p {
+    font-size: 1.15rem;
+    color: #555;
+}
+
+.testimonial h5 {
+    color: $primary;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.footer-custom {
+    background-color: $secondary;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
