@@ -3,6 +3,11 @@
 ## Overview
 TechX Pro is a sleek and modern website template designed for headphone products. Built with Bootstrap and SCSS, it offers a highly customizable and responsive design. The theme includes various Bootstrap effects, such as carousels and animations, to enhance user experience.
 
+
+<img src="images/screenshot1.png" alt="TechX Pro Homepage" width="600">
+<img src="images/screenshot2.png" alt="Product Carousel" width="600">
+<img src="images/screenshot3.png" alt="Responsive Design Preview" width="600">
+
 ## Features
 - **Built with Bootstrap**: Utilizes Bootstrap for responsive and flexible design.
 - **SCSS Support**: Modular and maintainable styling.
